@@ -695,7 +695,7 @@
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
-      "secret": "RTJHvYwavDdYQbMS1N3WH3SEdOk7OFDo",
+      "secret": "V36inROZmLSxRBAPWPwfAgMkSDorul0z",
       "redirectUris": [
         "/login/oauth2/code/backend-gateway-client",
         "http://backend-resources:9191/swagger-ui/oauth2-redirect.html"
@@ -791,7 +791,7 @@
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
-      "secret": "5EP9AytW0FA6uR4w6D9xz3zV45ndZ37l",
+      "secret": "6XaYpimCxBLrj3I0VYy4noXGSV0bBkgx",
       "redirectUris": [],
       "webOrigins": [],
       "notBefore": 0,

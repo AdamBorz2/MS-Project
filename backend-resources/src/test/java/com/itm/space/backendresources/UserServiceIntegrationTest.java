@@ -22,12 +22,9 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
-
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -72,9 +69,6 @@ public class UserServiceIntegrationTest extends BaseIntegrationTest {
         // Настройка mock-объектов для Keycloak
         RealmResource realmResource = mock(RealmResource.class);
         UsersResource usersResource = mock(UsersResource.class);
-        UserResource userResource = mock(UserResource.class);
-        RoleMappingResource roleMappingResource = mock(RoleMappingResource.class);
-        MappingsRepresentation mappingsRepresentation = mock(MappingsRepresentation.class);
         when(keycloakClient.realm(realm)).thenReturn(realmResource);
         when(realmResource.users()).thenReturn(usersResource);
         when(usersResource.create(any(UserRepresentation.class)))
@@ -140,6 +134,3 @@ public class UserServiceIntegrationTest extends BaseIntegrationTest {
         assertTrue(response.getGroups().contains("GROUP_USER"));
     }
 }
-
-
-
